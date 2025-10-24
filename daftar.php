@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                     echo '<tr>';
                     echo '<td>' . $i . '</td>';
                     echo '<td>' . htmlspecialchars($nama_lengkap, ENT_QUOTES, 'UTF-8') . '</td>';
-                    echo '<td>' . htmlspecialchars((string)$umur, ENT_QUOTES, 'UTF-8') . '</td>';
+                    echo '<td>' . htmlspecialchars($umur . ' tahun', ENT_QUOTES, 'UTF-8') . '</td>';
                     echo '<td>' . htmlspecialchars($asal_kota, ENT_QUOTES, 'UTF-8') . '</td>';
                     echo '</tr>';
                 }
